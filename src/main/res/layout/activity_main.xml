@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/iv_header"
+        android:contentDescription="Furious Furry Coder"
+        android:src="@drawable/myimage"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Full Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_header"
+        android:layout_height="wrap_content"
+        tools:text="Vaishnav Pillai"
+        android:textSize="26dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="14dp"
+        android:text="Position"
+        android:textSize="18dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_education_label"
+        android:layout_marginTop="24dp"
+        android:text="Education"
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_education_title"
+        android:layout_marginTop="8dp"
+        android:text="College/University Name"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_education_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_education_label"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/tv_education_degree"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Degree"
+        android:textSize="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_education_year"
+        app:layout_constraintStart_toStartOf="@+id/tv_education_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_education_title"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_education_year"
+        android:layout_marginEnd="16dp"
+        android:text="Year"
+        android:textSize="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_education_degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_course_label"
+        android:layout_marginTop="24dp"
+        android:text="Courses"
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_education_degree"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_course_title"
+        android:layout_marginTop="8dp"
+        android:text="Organizations"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_label"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/tv_course_degree"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Course Name"
+        android:textSize="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_education_year"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_title"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_course_year"
+        android:layout_marginEnd="16dp"
+        android:text="Year"
+        android:textSize="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_course_degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_open_github"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:onClick="openGithub"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        android:text="Open Github"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
